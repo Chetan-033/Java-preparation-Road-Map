@@ -1,5 +1,3 @@
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
 class ArrayList{
     int arr[];
     int size;
@@ -32,6 +30,24 @@ class ArrayList{
         }
         arr=newArr;
     }
+    public int get(int index){
+        return arr[index];
+    }
+    public void addByIndex(int index,int value){
+        if (size<=index){
+            add(value);
+        } else {
+            arr[index]=value;
+        }
+    }
+    public int indexOf(int value){
+        for(int i=0;i<size;i++){
+            if(value == arr[i]){
+                return i;
+            }
+        } 
+        return 0;
+    }
     public void print(){
         for(int i=0;i<size;i++){
             System.out.println(arr[i]);
@@ -51,6 +67,7 @@ class Main {
         list.add(24);
         // print method
         list.print();
+        System.out.println("index" + list.indexOf(21));
     }
 }
 
