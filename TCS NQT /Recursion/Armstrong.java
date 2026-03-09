@@ -2,10 +2,13 @@
 import java.util.*;
 class Main {
     static int isArmstrong(int num){
-        int digit = String.valueOf(num).length();
-        System.out.println(digit);
-        int temp=0;
+        int temp=num;
         int sum=0;
+        int digit=0;
+        while(temp!=0){
+            digit++;
+            temp=temp/10;
+        }
         while(num!=0){
             temp = num%10;
             sum += Math.pow(temp,digit);
@@ -16,6 +19,12 @@ class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int num = Math.abs(sc.nextInt());
-        System.out.println(isArmstrong(num));
+        if(isArmstrong(num) == num)
+        {
+            System.out.println("Armstrong number");   
+        }
+        else {
+            System.out.println("Not Armstrong number");
+        }
     }
 }
