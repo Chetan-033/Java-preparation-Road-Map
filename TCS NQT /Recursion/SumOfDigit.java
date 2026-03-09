@@ -1,4 +1,4 @@
-// Check Armstrong number
+// Find Sum of digits of a number
 import java.util.*;
 class Main {
     static int getSumOfDigit(int num){
