@@ -10,6 +10,19 @@
 import java.util.*;
 class Main {
     public static void main(String[] args) {
+        // Scanner sc=new Scanner(System.in);
+        // int n=sc.nextInt();
+        // int arr[]=new int[n];
+        // int index=0;
+        // for(int i=0;i<n;i++){
+        //     int element=sc.nextInt();
+        //     if(element != 0)
+        //     {
+        //         arr[index]=element;
+        //         index++;
+        //     }
+        // }
+        // System.out.println(Arrays.toString(arr));
         int arr[]={0,5,0,1,9,0,5,1};
         for(int i=0;i<arr.length;i++){
             if (arr[i]==0){
