@@ -13,9 +13,8 @@ import java.util.*;
 class Main {
     public static void main(String[] args) {
         String str="chetan nerkar";
-        HashMap<String, Integer> map=new HashMap<>();
-        for(String s:str.split("")){
-            if (!s.equals(" "))
+        HashMap<Character, Integer> map=new HashMap<>();
+        for(Character s:str.toCharArray()){
             map.put(s, map.getOrDefault(s, 0) +1);
         }
         System.out.println(map);
