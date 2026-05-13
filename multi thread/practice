@@ -1,0 +1,230 @@
+Level 1 — Basics of Thread Creation
+Problem 1: Print Numbers Using a Thread
+
+Create a thread that prints numbers from 1 to 5 with a delay of 1 second.
+
+Concepts
+Thread
+run()
+start()
+sleep()
+Problem 2: Two Threads Running Together
+
+Create:
+
+One thread prints even numbers
+Another prints odd numbers
+Goal
+
+Understand concurrent execution.
+
+Problem 3: Extend Thread vs Runnable
+
+Solve the same problem using:
+
+extends Thread
+implements Runnable
+Goal
+
+Understand differences practically.
+
+Level 2 — Thread Methods
+Problem 4: Using join()
+
+Create 3 threads:
+
+Thread 1 finishes first
+Thread 2 waits for Thread 1
+Thread 3 waits for Thread 2
+Concepts
+join()
+execution order
+Problem 5: Thread Priority
+
+Create 3 threads with different priorities.
+
+Print:
+
+Thread.currentThread().getPriority()
+Goal
+
+Learn:
+
+MIN_PRIORITY
+MAX_PRIORITY
+NORM_PRIORITY
+Problem 6: Daemon Thread
+
+Create:
+
+one user thread
+one daemon thread
+Goal
+
+Understand JVM behavior.
+
+Level 3 — Synchronization
+Problem 7: Bank Account Problem
+
+Two threads withdraw money from the same account.
+
+Without synchronization:
+
+balance becomes incorrect
+
+Then solve using:
+
+synchronized
+MOST IMPORTANT beginner threading problem.
+Problem 8: Counter Increment Problem
+
+Create 100 threads.
+Each thread increments a shared counter.
+
+Expected:
+
+100
+
+But without synchronization it may fail.
+
+Concepts
+race condition
+critical section
+Level 4 — Inter-Thread Communication
+Problem 9: Producer Consumer Problem
+
+One thread produces data.
+Another consumes data.
+
+Use:
+
+wait()
+notify()
+Concepts
+thread communication
+object monitor
+Problem 10: Ticket Booking System
+
+Multiple users book seats simultaneously.
+
+Prevent double booking using synchronization.
+
+Level 5 — Executor Framework
+Problem 11: Fixed Thread Pool
+
+Create 10 tasks.
+Run them using:
+
+ExecutorService
+Concepts
+thread pool
+task management
+Problem 12: Callable and Future
+
+Calculate factorial using Callable.
+
+Return result using:
+
+Future
+Level 6 — Real-World Mini Projects
+Problem 13: Multithreaded File Downloader
+
+Simulate downloading:
+
+video
+image
+audio
+
+using separate threads.
+
+Problem 14: Chat Application Simulation
+
+Simulate:
+
+sender thread
+receiver thread
+Problem 15: Traffic Signal System
+
+Different threads control:
+
+Red light
+Green light
+Yellow light
+
+Use sleep timing.
+
+Level 7 — Advanced Concepts
+Problem 16: Deadlock Example
+
+Create intentional deadlock using:
+
+synchronized
+
+Then fix it.
+
+Concepts
+deadlock
+lock ordering
+Problem 17: Read Write Lock
+
+Many users can read.
+Only one can write.
+
+Use:
+
+ReadWriteLock
+Problem 18: Virtual Threads (Java 21)
+
+Create 10,000 virtual threads.
+
+Goal
+
+Understand modern Java concurrency.
+
+Recommended Learning Order
+
+Basics→Methods→Synchronization→Communication→Executor Framework→Advanced
+
+Best Practice for You
+
+For every problem:
+
+First solve normally
+Add thread names
+Print thread states
+Add delays using sleep()
+Break code intentionally
+Fix synchronization issues
+
+That’s where real understanding happens.
+
+Strong Recommendation
+
+Start with these 5 first:
+
+Number printing thread
+Even/Odd threads
+join() example
+Bank account synchronization
+Producer Consumer
+
+If you master these, your threading foundation becomes strong.
+
+Mini Challenge For You (Try Now)
+
+Create 2 threads:
+
+Thread A prints:
+A1 A2 A3 A4 A5
+Thread B prints:
+B1 B2 B3 B4 B5
+
+Add:
+
+Thread.sleep(500);
+
+Then observe:
+
+execution order
+thread scheduling
+concurrent behavior
