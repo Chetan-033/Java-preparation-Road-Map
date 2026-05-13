@@ -1,0 +1,244 @@
+Beginner Level
+Question 1 — Simple Thread
+
+Create a thread that prints:
+
+Hello from Thread
+
+5 times.
+
+Question 2 — Number Printing
+
+Create a thread that prints numbers from:
+
+1 to 10
+
+with a 1-second delay between each number.
+
+Question 3 — Even and Odd
+
+Create two threads:
+
+Thread 1 → prints even numbers from 1–20
+Thread 2 → prints odd numbers from 1–20
+Question 4 — Thread Names
+
+Create 3 threads and print:
+
+Thread.currentThread().getName()
+Question 5 — Runnable Interface
+
+Create a class using Runnable that prints:
+
+Learning Java Threads
+
+10 times.
+
+Intermediate Level
+Question 6 — join() Practice
+
+Create:
+
+Thread A prints numbers 1–5
+Thread B should start only after Thread A finishes
+
+Use:
+
+join()
+Question 7 — Thread Priority
+
+Create 3 threads with:
+
+MIN priority
+NORM priority
+MAX priority
+
+Print which thread executes first.
+
+Question 8 — Sleep Method
+
+Create a countdown timer:
+
+5
+4
+3
+2
+1
+Go!
+
+using Thread.sleep().
+
+Question 9 — Multiple Tasks
+
+Create threads for:
+
+downloading music
+downloading video
+downloading image
+
+Each should run simultaneously.
+
+Question 10 — Daemon Thread
+
+Create:
+
+one daemon thread
+one normal thread
+
+Observe JVM behavior.
+
+Synchronization Level
+Question 11 — Shared Counter
+
+Create 50 threads.
+Each increments the same counter by 1.
+
+Expected output:
+
+50
+
+Use synchronization.
+
+Question 12 — Bank Account
+
+Initial balance:
+
+1000
+
+Two threads withdraw money simultaneously.
+
+Prevent incorrect balance.
+
+Question 13 — Ticket Booking
+
+Create a railway booking system with:
+
+total seats = 5
+multiple users booking simultaneously
+
+Prevent overbooking.
+
+Question 14 — Printer Problem
+
+Multiple threads try to print documents.
+
+Allow only one thread to access printer at a time.
+
+Question 15 — Movie Seat Booking
+
+Users:
+
+User1 books 3 seats
+User2 books 4 seats
+
+Total seats:
+
+5
+
+Prevent invalid booking.
+
+Inter-Thread Communication
+Question 16 — Producer Consumer
+
+Producer adds items.
+Consumer removes items.
+
+Use:
+
+wait()
+notify()
+Question 17 — Restaurant Order System
+
+Chef thread prepares food.
+Customer thread waits until food is ready.
+
+Question 18 — Data Sharing
+
+One thread generates random numbers.
+Another thread reads them.
+
+Synchronize properly.
+
+Executor Framework
+Question 19 — Fixed Thread Pool
+
+Create 10 tasks and execute them using:
+
+Executors.newFixedThreadPool(3)
+Question 20 — Callable Example
+
+Create a thread that returns:
+
+factorial of a number
+
+using:
+
+Callable
+Future
+Question 21 — Scheduled Task
+
+Print current time every 2 seconds using:
+
+ScheduledExecutorService
+Advanced Level
+Question 22 — Deadlock
+
+Create a deadlock situation using:
+
+synchronized
+
+Then fix it.
+
+Question 23 — Read Write Lock
+
+Many users read data.
+Only one user can update data.
+
+Use:
+
+ReadWriteLock
+Question 24 — Thread-safe Singleton
+
+Create a thread-safe Singleton class.
+
+Question 25 — Virtual Threads
+
+Create:
+
+10000
+
+virtual threads in Java 21.
+
+Real-World Mini Projects
+Question 26 — ATM Machine
+
+Multiple users withdraw money simultaneously.
+
+Question 27 — Chat Application
+
+Simulate:
+
+sender thread
+receiver thread
+Question 28 — Online Food Delivery
+
+Threads:
+
+order placing
+cooking
+delivery
+Question 29 — Traffic Signal
+
+Control:
+
+Red
+Yellow
+Green
+
+using threads.
+
+Question 30 — Multiplayer Game Simulation
+
+Different players run in separate threads.
+
+Track scores safely.
